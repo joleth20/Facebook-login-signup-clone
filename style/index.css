@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --bg-primary:#F0F2F5;
+   --primary-color: #1C1E21;
+   --ffmily-primary: Helvetica, Arial, sans-serif;
+   --bg-color-1:#0866FF;
+   --bg-color-2: #42b72a;
+   --input-bg-valid:#E8F0FE;
+   --border-input-color:rgb(216, 212, 212);
+}
+
+.facebook-login-signup{
+    height: 100vh;
+    width: 100%;
+    padding: 72px 120px 112px;
+    background-color: var(--bg-primary);
+    display: flex;
+}
+
+.facebook-login-signup .logo{
+    height: 266px;
+    width: 580px;
+    padding: 0px 32px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facebook-login-signup .logo .logo-container{
+    height: 181px;
+    width: 548px;
+    padding: 80px 0px 16px;
+}
+
+.facebook-login-signup .logo img{
+    height: 105px;
+    width: 320px;
+}
+
+.facebook-login-signup .logo h2{
+    height: 83px;
+    width: 500px;
+    font-family: var(--ffmily-primary);
+    font-size: 28px;
+    font-weight: normal;
+}
+
+
+.facebook-login-signup .login{
+    height: 456px;
+    width: 396px;
+    font-family: var(--ffmily-primary);
+    font-size: 14px;
+    text-align: center;
+}
+
+.facebook-login-signup .login form{
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 396px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.facebook-login-signup .login form input{
+    height: 47px;
+    width: 364px;
+    border-radius: 8px;
+    border: 1px solid var(--border-input-color);
+    padding: 14px 16px;
+    outline: none;
+}
+
+.facebook-login-signup .login form input:focus{
+    border: 1px solid var(--bg-color-1);
+}
+
+.facebook-login-signup .login form input:valid{
+    font-family: var(--ffmily-primary);
+    font-size: 17px;
+}
+
+.facebook-login-signup .login form input:invalid{
+    font-family: var(--ffmily-primary);
+    font-size: 17px;
+}
+
+.facebook-login-signup .login form ::placeholder{
+    font-family: var(--ffmily-primary);
+    font-size: 17px;
+}
+
+.facebook-login-signup .login form .password-container{
+    height: 47px;
+    width: 364px;
+    border: 1px solid var(--border-input-color);
+    border-radius: 8px;
+    padding: 14px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facebook-login-signup .login form .password-container input{
+    height: 22px;
+    width: 300px;
+    border: none;
+}
+
+.facebook-login-signup .login form .password-container i{
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.facebook-login-signup .login form input:nth-child(3){
+    background-color: var(--bg-color-1);
+    border: none;
+    color: var(--bg-primary);
+    cursor: pointer;
+    font-family: var(--ffmily-primary);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.facebook-login-signup .login form a:nth-child(4){
+    color: var(--bg-color-1);
+    font-family: var(--ffmily-primary);
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.facebook-login-signup .login form a:nth-child(5){
+    height: 47px;
+    width: 193px;
+    background-color: var(--bg-color-2);
+    border: none;
+    border-radius: 6px;
+    color: var(--bg-primary);
+    font-family: var(--ffmily-primary);
+    font-size: 17px;
+    font-weight: bolder;
+    line-height: 48px;
+    padding: 0 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.facebook-login-signup .login .create-page{
+    margin: 28px 0px 0px;
+}
+
+.facebook-login-signup .login .create-page a{
+    color: var(--primary-color);
+    font-family: var(--ffmily-primary);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Media Query */
+
+@media (max-width: 1115px) and (min-width:993px){
+
+    .facebook-login-signup {
+        height: 100%;
+        width: 100%;
+        padding: 72px 0px 112px;
+    }
+}
+
+@media (max-width: 992px){
+
+    .facebook-login-signup {
+        height: 100%;
+        padding: 0px 120px 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .facebook-login-signup .login {
+        height: 400px;
+    }
+
+    .facebook-login-signup .logo{
+        padding: unset;
+    }
+
+    .facebook-login-signup .logo .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .facebook-login-signup .logo h2 {
+        width: 400px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .facebook-login-signup .login form {
+        height: 330px;
+        padding: unset;
+        margin: unset;
+        justify-content: center;
+    }
+}
